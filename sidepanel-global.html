@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <style>
+    .btn-container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .side-btn{
+      padding: 10px 25px;
+      font-family: 'Source Sans Pro', sans-serif;
+      background-color: #04AA6D;
+      color: white;
+      border-color: #04AA6D;
+      border-radius: 10px;
+      font-weight: 900;
+      font-size: large; 
+    }
+    .prediction-content{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: medium;
+    }
+    .color-blue{
+      color: #1a8cff;
+    }
+    .color-red{
+      color: #ff704d;
+    }
+  </style>
+  <body>
+    <h1>BC Crash game!</h1>
+    <div class="btn-container">
+      <button class="side-btn" id="real_predict" type="button">Predict</button>
+      <button class="side-btn" id="auto_bet" type="button">Auto Bet</button>
+    </div>
+    <p class="prediction-content" id="prev_crash">
+      
+    </p>
+    <p class="prediction-content" id="next_crash">
+      
+    </p>
+  </body>
+  <script src="sidepanel.js"></script>
+</html>
