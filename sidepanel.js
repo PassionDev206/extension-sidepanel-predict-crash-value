@@ -12,9 +12,11 @@ document.getElementById('real_predict').addEventListener('click', async () => {
             let dotPostion = crash.indexOf(".");
             crash = crash.slice(0, dotPostion + 3);
             if(next_carsh != crash){
-                // prev_crash = data.rate;
+                prev_crash = data.rate;
                 document.getElementById("prev_crash").innerHTML = "Previous crash value: <b class='color-blue'>" + prev_crash + "</b>";
                 next_carsh = crash;
+                console.log("Prev: ", prev_crash);
+                console.log("Next: ", next_carsh);
                 document.getElementById("next_crash").innerHTML = "The next crash value: <b class='color-red'>" + next_carsh + "</b>";
             } else {
                 continue;
